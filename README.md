@@ -25,7 +25,7 @@ A role-based student management system developed using PHP and MySQL. The projec
 
 ## Project Demo
 
-http://ishita.infinityfree.com
+http://ishita.infinityfree.me
 
 ## Author
 
