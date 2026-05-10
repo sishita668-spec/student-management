@@ -1,0 +1,270 @@
+/* Global Page Style */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Poppins", sans-serif !important;
+    background: #fff7d1 !important; /* soft yellow */
+}
+
+/* Form Container */
+.input-box {
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #000; /* black box */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    color: #ffcc00;
+    text-align: center;
+}
+
+/* Heading Text */
+.title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+
+/* Label Styling */
+.label-color {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffcc00;
+}
+
+/* Email Input Field */
+.input-box input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff7d1;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Submit Button */
+.login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media (max-width: 480px) {
+    .input-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+/* ============================
+   STUDENT DETAILS DISPLAY STYLES
+   ============================*/
+
+/* Container for details page */
+.details-container {
+    width: 100% !important;
+    min-height: 100vh !important;
+    padding: 40px 20px !important;
+    background: #fff7d1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Details Card */
+.details-card {
+    width: 100% !important;
+    max-width: 600px !important;
+    background-color: #000 !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
+    animation: slideIn 0.5s ease !important;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Section */
+.details-header {
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.details-header h1 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #ffcc00 !important;
+    margin: 0 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Body Section - Details */
+.details-body {
+    padding: 30px;
+}
+
+/* Individual Detail Item */
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffcc00;
+    transition: transform 0.2s ease;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item:hover {
+    transform: translateX(10px);
+}
+
+/* Detail Label (left side) */
+.detail-label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffcc00 !important;
+    text-align: left !important;
+    flex: 0 0 30% !important;
+}
+
+/* Detail Value (right side) */
+.detail-value {
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+    flex: 1 !important;
+    word-break: break-all !important;
+    padding-left: 20px !important;
+}
+
+/* Footer Section */
+.details-footer {
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block !important;
+    padding: 12px 40px !important;
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    transition: 0.3s ease !important;
+    border: 2px solid #ffcc00 !important;
+    cursor: pointer !important;
+}
+
+.back-btn:hover {
+    background-color: #e6b800 !important;
+    border-color: #e6b800 !important;
+    transform: scale(1.05) !important;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+/* No Results Found */
+.no-results {
+    width: 100%;
+    max-width: 600px;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffcc00;
+}
+
+.no-results h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.no-results p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .details-card,
+    .no-results {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .details-header h1 {
+        font-size: 24px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+
+    .detail-label {
+        display: block;
+        margin-bottom: 8px;
+        flex: 1 1 100%;
+    }
+
+    .detail-value {
+        text-align: left;
+        flex: 1 1 100%;
+        padding-left: 0;
+    }
+
+    .details-body,
+    .details-footer {
+        padding: 20px;
+    }
+
+    .back-btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}

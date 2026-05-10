@@ -1,0 +1,142 @@
+/* Global Page Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fff7d1; /* soft yellow */
+}
+
+/* Form Container */
+.input-box {
+    width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #000; /* black box */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    color: #ffcc00;
+    text-align: center;
+}
+
+/* Title Styling */
+.title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.title h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #ffcc00;
+}
+
+/* Section Headings (like Enter New Password) */
+h3 {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0 8px;
+    font-weight: 600;
+    color: #ffcc00;
+}
+
+/* Labels */
+.label-color {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffcc00;
+}
+
+/* Input Fields */
+.input-box input[type="email"],
+.input-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff7d1;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Submit Button */
+.login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .input-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+/* Success Message */
+.success-message {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00dd00;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 221, 0, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #00dd00;
+    text-align: center;
+}
+
+/* Error Message */
+.error-message {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff6b6b;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+    text-align: center;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,123 @@
+/* ---------------------------
+   Global Page Style
+----------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fff7d1; /* soft yellow background */
+    overflow-y: auto;
+}
+
+/* ---------------------------
+   Dashboard Content Header
+----------------------------*/
+.content {
+    margin-left: 70px;
+    padding: 25px;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* ---------------------------
+   Sidebar Menu Icon (☰)
+----------------------------*/
+.menu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    background-color: #000;
+    color: #ffcc00;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    z-index: 1000;
+    transition: 0.3s ease;
+        overflow-y: auto;
+}
+
+.menu:hover {
+    transform: scale(1.07);
+}
+
+/* ---------------------------
+   Sidebar (Sliding Panel)
+----------------------------*/
+.sidebar {
+    position: fixed;
+    left: -230px;   /* stays hidden until hover */
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background: #000;
+    transition: all 0.4s ease;
+    padding-top: 70px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 6px 0px 20px rgba(0,0,0,0.3);
+        overflow-y: auto;
+}
+
+/* sidebar appears only on hover */
+.menu:hover + .sidebar,
+.sidebar:hover {
+    left: 0;
+}
+
+/* ---------------------------
+   Sidebar Text + Items
+----------------------------*/
+.sidebar a,
+.sidebar label {
+    display: block;
+    padding: 14px 25px;
+    font-size: 18px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sidebar label {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+/* hover effect */
+.sidebar a:hover {
+    background: #ffcc00;
+    color: #000;
+    border-radius: 10px;
+    margin: 4px 10px;
+}
+
+/* Logout is red for extra clarity */
+.sidebar a:first-child {
+    color: #ff4444;
+    font-weight: 700;
+}
+
+.sidebar a:first-child:hover {
+    background: #ff4444;
+    color: white;
+}
+
+/* ---------------------------
+   Responsive
+----------------------------*/
+@media (max-width: 600px) {
+    .sidebar {
+        width: 200px;
+        left: -200px;
+    }
+
+    .sidebar a, .sidebar label {
+        font-size: 16px;
+    }
+        
+}

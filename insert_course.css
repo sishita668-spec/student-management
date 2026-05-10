@@ -1,0 +1,130 @@
+/* Global Page Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fff7d1; /* soft yellow */
+}
+
+/* Form Container */
+.input-box {
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #000; /* black box */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    color: #ffcc00;
+    text-align: center;
+}
+
+/* Heading */
+.title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.title h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #ffcc00;
+}
+
+/* Message Container */
+.message-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(255, 204, 0, 0.1);
+    border-left: 4px solid #ffcc00;
+    border-radius: 5px;
+}
+
+.success-message {
+    color: #ffcc00;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.back-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Labels */
+.label-color {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffcc00;
+}
+
+/* Inputs */
+.input-box input[type="number"],
+.input-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff7d1;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Submit Button */
+.add {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .input-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
